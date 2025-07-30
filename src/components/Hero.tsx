@@ -1,8 +1,20 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import Image from 'next/image';
-import { HiArrowRight, HiVideoCamera, HiAcademicCap, HiDocumentText } from 'react-icons/hi2';
+import { HiArrowRight, HiVideoCamera, HiAcademicCap, HiDocumentText, HiChevronDown } from 'react-icons/hi2';
+import { navigationLinks, companyInfo } from '@/data/navigation';
+import CustomDropdown from './CustomDropdown';
 
 const Hero: React.FC = () => {
+    const [businessType, setBusinessType] = useState('');
+    
+    const businessTypeOptions = [
+        { value: 'pe-firm', label: 'Private Equity Firm' },
+        { value: 'coach-consultant', label: 'Coach/Consultant' },
+        { value: 'agency', label: 'Digital Agency' },
+        { value: 'other', label: 'Other' }
+    ];
+    
     return (
         <section
             id="hero"
@@ -20,24 +32,24 @@ const Hero: React.FC = () => {
 
                         {/* Main Heading */}
                         <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
-                            The Growth Catalyst<br />
+                            {companyInfo.tagline}<br />
                             System
                         </h1>
 
                         {/* Description */}
                         <p className="text-gray-400 text-base lg:text-lg leading-relaxed max-w-xl">
-                            Engineer and deploy high-performance digital execution systems that integrate cutting-edge website development, strategic branding, and intelligent automation to drive unparalleled revenue growth.
+                            {companyInfo.description}
                         </p>
 
                         {/* Buttons */}
                         <div className="flex flex-col sm:flex-row gap-3">
-                            <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center gap-2 transition-colors">
+                            <a href={navigationLinks.bookCall} className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center gap-2 transition-colors">
                                 Book Strategy Call
                                 <HiArrowRight className="w-4 h-4" />
-                            </button>
-                            <button className="border border-gray-600 text-white hover:bg-gray-800 px-6 py-3 rounded-lg font-medium transition-colors">
+                            </a>
+                            <a href={navigationLinks.caseStudiesPage} className="border border-gray-600 text-white hover:bg-gray-800 px-6 py-3 rounded-lg font-medium transition-colors">
                                 View Case Studies
-                            </button>
+                            </a>
                         </div>
 
                         {/* Service Features */}
@@ -96,17 +108,14 @@ const Hero: React.FC = () => {
                                     <label htmlFor="businessType" className="block text-xs font-medium text-gray-300 mb-1">
                                         Business Type
                                     </label>
-                                    <select
+                                    <CustomDropdown
                                         id="businessType"
                                         name="businessType"
-                                        className="w-full px-3 py-2.5 bg-white/10 border border-white/20 rounded-lg text-white text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                                    >
-                                        <option value="" className="text-gray-900">Select your business type</option>
-                                        <option value="pe-firm" className="text-gray-900">Private Equity Firm</option>
-                                        <option value="coach-consultant" className="text-gray-900">Coach/Consultant</option>
-                                        <option value="agency" className="text-gray-900">Digital Agency</option>
-                                        <option value="other" className="text-gray-900">Other</option>
-                                    </select>
+                                        placeholder="Select your business type"
+                                        options={businessTypeOptions}
+                                        value={businessType}
+                                        onChange={setBusinessType}
+                                    />
                                 </div>
                                 
                                 <div>
@@ -138,17 +147,29 @@ const Hero: React.FC = () => {
                     </div>
                 </div>
 
-                {/* Featured On Section */}
+                {/* Trusted By Section with Marquee */}
                 <div className="mt-20 pt-12 border-t border-gray-800">
-                    <p className="text-gray-500 text-sm font-medium mb-8">FEATURED ON</p>
-                    <div className="flex items-center justify-between opacity-60">
-                        <div className="text-gray-400 font-bold text-xl">Rise</div>
-                        <div className="text-gray-400 font-bold text-xl">★ Sitemark</div>
-                        <div className="text-gray-400 font-bold text-xl">◐ Product.</div>
-                        <div className="text-gray-400 font-bold text-xl">◉ PinPoint</div>
-                        <div className="text-gray-400 font-bold text-xl">hues</div>
-                        <div className="text-gray-400 font-bold text-xl">Rise</div>
-                        <div className="text-gray-400 font-bold text-xl">★ Sitem</div>
+                    <p className="text-gray-500 text-sm font-medium mb-8 text-center">TRUSTED BY INDUSTRY LEADERS</p>
+                    <div className="relative overflow-hidden">
+                        <div className="flex animate-marquee whitespace-nowrap">
+                            <div className="mx-8 text-gray-400 font-bold text-xl">Goldman Sachs</div>
+                            <div className="mx-8 text-gray-400 font-bold text-xl">KKR & Co</div>
+                            <div className="mx-8 text-gray-400 font-bold text-xl">Blackstone</div>
+                            <div className="mx-8 text-gray-400 font-bold text-xl">Apollo Global</div>
+                            <div className="mx-8 text-gray-400 font-bold text-xl">Carlyle Group</div>
+                            <div className="mx-8 text-gray-400 font-bold text-xl">Bain Capital</div>
+                            <div className="mx-8 text-gray-400 font-bold text-xl">TPG Inc</div>
+                            <div className="mx-8 text-gray-400 font-bold text-xl">Warburg Pincus</div>
+                            {/* Duplicate for seamless loop */}
+                            <div className="mx-8 text-gray-400 font-bold text-xl">Goldman Sachs</div>
+                            <div className="mx-8 text-gray-400 font-bold text-xl">KKR & Co</div>
+                            <div className="mx-8 text-gray-400 font-bold text-xl">Blackstone</div>
+                            <div className="mx-8 text-gray-400 font-bold text-xl">Apollo Global</div>
+                            <div className="mx-8 text-gray-400 font-bold text-xl">Carlyle Group</div>
+                            <div className="mx-8 text-gray-400 font-bold text-xl">Bain Capital</div>
+                            <div className="mx-8 text-gray-400 font-bold text-xl">TPG Inc</div>
+                            <div className="mx-8 text-gray-400 font-bold text-xl">Warburg Pincus</div>
+                        </div>
                     </div>
                 </div>
             </div>

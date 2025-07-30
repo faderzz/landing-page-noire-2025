@@ -3,13 +3,9 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { Transition } from '@headlessui/react';
-import { HiOutlineXMark, HiBars3 } from 'react-icons/hi2';
-import { FaFingerprint } from 'react-icons/fa';
-import { HiArrowRight } from 'react-icons/hi2';
-
+import { HiOutlineXMark, HiBars3, HiArrowRight } from 'react-icons/hi2';
 import Container from './Container';
-import { siteDetails } from '@/data/siteDetails';
-import { menuItems } from '@/data/menuItems';
+import { navigationLinks, companyInfo } from '@/data/navigation';
 
 const Header: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -23,42 +19,42 @@ const Header: React.FC = () => {
             <Container className="!px-0">
                 <nav className="bg-white mx-auto flex justify-between items-center py-2 px-6 max-w-7xl mt-4 rounded-2xl shadow-lg border border-gray-100">
                     {/* Logo */}
-                    <div className="flex items-center gap-3">
+                    <Link href="/" className="flex items-center gap-3">
                         <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
-                            <span className="text-white font-bold text-lg">G</span>
+                            <span className="text-white font-bold text-lg">N</span>
                         </div>
-                        <span className="text-xl font-bold text-gray-900">Growth Catalyst</span>
-                    </div>
+                        <span className="text-xl font-bold text-gray-900">{companyInfo.name}</span>
+                    </Link>
 
                     {/* Navigation Menu */}
                     <ul className="hidden md:flex items-center gap-8">
                         <li>
-                            <Link href="#system" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
+                            <Link href={navigationLinks.system} className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
                                 The System
                             </Link>
                         </li>
                         <li>
-                            <Link href="#services" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
+                            <Link href={navigationLinks.services} className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
                                 Services
                             </Link>
                         </li>
                         <li>
-                            <Link href="#results" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
+                            <Link href={navigationLinks.results} className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
                                 Results
                             </Link>
                         </li>
                         <li>
-                            <Link href="#testimonials" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
+                            <Link href={navigationLinks.caseStudies} className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
                                 Case Studies
                             </Link>
                         </li>
                         <li>
-                            <Link href="#pricing" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
+                            <Link href={navigationLinks.investment} className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
                                 Investment
                             </Link>
                         </li>
                         <li>
-                            <Link href="#about" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
+                            <Link href={navigationLinks.about} className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
                                 About
                             </Link>
                         </li>
@@ -66,7 +62,7 @@ const Header: React.FC = () => {
 
                     {/* Enroll Now Button */}
                     <div className="hidden md:block">
-                        <Link href="#contact" className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg transition-colors text-md font-medium flex items-center gap-2">
+                        <Link href={navigationLinks.bookCall} className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg transition-colors text-md font-medium flex items-center gap-2">
                             Get Started
                             <HiArrowRight className="w-4 h-4" />
                         </Link>

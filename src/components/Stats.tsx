@@ -5,7 +5,7 @@ const Stats: React.FC = () => {
     const agencyStats = [
         {
             icon: <HiCurrencyDollar className="w-8 h-8 text-purple-600" />,
-            title: "$2M+",
+            title: "£2M+",
             description: "Revenue generated for our clients through strategic automation and high-performance digital systems."
         },
         {
