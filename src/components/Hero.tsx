@@ -20,36 +20,49 @@ const Hero: React.FC = () => {
             id="hero"
             className="relative min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 pt-32 pb-16 px-6"
         >
-            <div className="max-w-6xl mx-auto mt-8">
+            <div className="max-w-7xl mx-auto mt-8">
                 <div className="grid lg:grid-cols-[1.2fr_0.8fr] items-start">
                     {/* Left Content */}
                     <div className="space-y-6">
-                        {/* New Badge */}
-                        <div className="inline-flex items-center gap-2 bg-purple-600/20 border border-purple-500/30 rounded-full px-4 py-2">
-                            <span className="bg-purple-600 text-white text-xs font-semibold px-2 py-1 rounded-full">New</span>
-                            <span className="text-gray-300 text-sm">Only 3 spots available!</span>
-                        </div>
-
                         {/* Main Heading */}
-                        <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
-                            {companyInfo.tagline}<br />
-                            System
+                        <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight">
+                            Unlock Predictable Growth<br />
+                            in 90 Days, <span className='text-purple-500'>Without the Guesswork</span>.
                         </h1>
 
-                        {/* Description */}
-                        <p className="text-gray-400 text-base lg:text-lg leading-relaxed max-w-xl">
-                            {companyInfo.description}
+                        {/* Sub-headline */}
+                        <p className="text-gray-300 text-lg lg:text-xl leading-relaxed max-w-2xl">
+                            Our proven Growth Catalyst System helps businesses double revenue, streamline operations, and scale with confidence. Trusted by Goldman Sachs, KKR & Co., and 50+ leading brands.
                         </p>
 
-                        {/* Buttons */}
-                        <div className="flex flex-col sm:flex-row gap-3">
-                            <a href={navigationLinks.bookCall} className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center gap-2 transition-colors">
-                                Book Strategy Call
-                                <HiArrowRight className="w-4 h-4" />
+                        {/* Client Logos - Moved directly under headline */}
+                        <div className="py-4">
+                            <p className="text-gray-500 text-sm font-medium mb-4">TRUSTED BY INDUSTRY LEADERS</p>
+                            <div className="flex flex-wrap items-center gap-6 opacity-70">
+                                <div className="text-gray-400 font-bold text-lg">Goldman Sachs</div>
+                                <div className="text-gray-400 font-bold text-lg">KKR & Co</div>
+                                <div className="text-gray-400 font-bold text-lg">Blackstone</div>
+                                <div className="text-gray-400 font-bold text-lg">Apollo Global</div>
+                                <div className="text-gray-400 font-bold text-lg">Carlyle Group</div>
+                            </div>
+                        </div>
+
+                        {/* Primary & Secondary CTAs */}
+                        <div className="flex flex-col sm:flex-row gap-4">
+                            <a href={navigationLinks.bookCall} className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 transition-colors text-lg">
+                                Book Your Free Strategy Session
+                                <HiArrowRight className="w-5 h-5" />
                             </a>
-                            <a href={navigationLinks.caseStudiesPage} className="border border-gray-600 text-white hover:bg-gray-800 px-6 py-3 rounded-lg font-medium transition-colors">
-                                View Case Studies
-                            </a>
+                            <button className="border border-gray-600 text-white hover:bg-gray-800 px-8 py-4 rounded-lg font-semibold transition-colors text-lg flex items-center justify-center gap-2">
+                                <HiVideoCamera className="w-5 h-5" />
+                                See How It Works (3-min video)
+                            </button>
+                        </div>
+
+                        {/* Urgency/Scarcity */}
+                        <div className="inline-flex items-center gap-2 bg-red-600/20 border border-red-500/30 rounded-full px-4 py-2 mt-4">
+                            <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
+                            <span className="text-red-300 text-sm font-medium">Only 5 free strategy slots left this month</span>
                         </div>
 
                         {/* Service Features */}
@@ -70,7 +83,7 @@ const Hero: React.FC = () => {
                     </div>
 
                     {/* Right Content - Book a Call Form */}
-                    <div className="relative lg:mt-8">
+                    <div className="relative mt-8">
                         <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
                             <div className="text-center mb-5">
                                 <h3 className="text-xl font-bold text-white mb-1">Book a Strategy Call</h3>
@@ -147,31 +160,7 @@ const Hero: React.FC = () => {
                     </div>
                 </div>
 
-                {/* Trusted By Section with Marquee */}
-                <div className="mt-20 pt-12 border-t border-gray-800">
-                    <p className="text-gray-500 text-sm font-medium mb-8 text-center">TRUSTED BY INDUSTRY LEADERS</p>
-                    <div className="relative overflow-hidden">
-                        <div className="flex animate-marquee whitespace-nowrap">
-                            <div className="mx-8 text-gray-400 font-bold text-xl">Goldman Sachs</div>
-                            <div className="mx-8 text-gray-400 font-bold text-xl">KKR & Co</div>
-                            <div className="mx-8 text-gray-400 font-bold text-xl">Blackstone</div>
-                            <div className="mx-8 text-gray-400 font-bold text-xl">Apollo Global</div>
-                            <div className="mx-8 text-gray-400 font-bold text-xl">Carlyle Group</div>
-                            <div className="mx-8 text-gray-400 font-bold text-xl">Bain Capital</div>
-                            <div className="mx-8 text-gray-400 font-bold text-xl">TPG Inc</div>
-                            <div className="mx-8 text-gray-400 font-bold text-xl">Warburg Pincus</div>
-                            {/* Duplicate for seamless loop */}
-                            <div className="mx-8 text-gray-400 font-bold text-xl">Goldman Sachs</div>
-                            <div className="mx-8 text-gray-400 font-bold text-xl">KKR & Co</div>
-                            <div className="mx-8 text-gray-400 font-bold text-xl">Blackstone</div>
-                            <div className="mx-8 text-gray-400 font-bold text-xl">Apollo Global</div>
-                            <div className="mx-8 text-gray-400 font-bold text-xl">Carlyle Group</div>
-                            <div className="mx-8 text-gray-400 font-bold text-xl">Bain Capital</div>
-                            <div className="mx-8 text-gray-400 font-bold text-xl">TPG Inc</div>
-                            <div className="mx-8 text-gray-400 font-bold text-xl">Warburg Pincus</div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </section>
     );

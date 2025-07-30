@@ -19,7 +19,8 @@ export const navigationLinks = {
   // Footer links
   privacyPolicy: "/privacy",
   termsOfService: "/terms",
-  contact: "mailto:hello@noire.agency"
+  contact: "mailto:hello@noire.agency",
+  phone: "+44 20 7946 0958"
 };
 
 export const companyInfo = {

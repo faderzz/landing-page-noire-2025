@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import React from 'react';
-import { FaFingerprint } from 'react-icons/fa';
 
 import { navigationLinks, companyInfo, contactInfo, socialLinks } from '@/data/navigation';
 import { getPlatformIconByName } from '@/utils';

@@ -12,28 +12,36 @@ interface AgencyFAQ {
 const FAQ: React.FC = () => {
     const agencyFAQs: AgencyFAQ[] = [
         {
-            question: "How long does it take to implement The Growth Catalyst System?",
-            answer: "Implementation typically takes 90-120 days for the complete system. We break this into phases: Strategic Blueprint (2 weeks), Development & Setup (6-8 weeks), Testing & Optimization (2-3 weeks), and Launch & Training (1 week). You'll see measurable improvements within the first 30 days."
+            question: "How quickly will I see results?",
+            answer: "Most clients see immediate improvements in lead quality within the first 30 days. By month 3, you'll have measurable increases in qualified opportunities and revenue pipeline. The full Growth Catalyst System delivers 300%+ ROI typically within 6-12 months, with many clients seeing returns much sooner."
         },
         {
-            question: "What kind of ROI can I expect from your services?",
-            answer: "Our clients typically see 3-5x increases in qualified leads and 300-500% ROI within 6-12 months. However, results vary based on industry, current systems, and implementation scope. We provide detailed ROI projections during our strategy call based on your specific situation."
+            question: "What makes this different from other agencies or consultants?",
+            answer: "We don't just build websites or run ads. The Growth Catalyst System is a complete business transformation that automates your entire customer journey. While others focus on tactics, we architect systems that work 24/7 to generate, qualify, and convert leads without constant management. Plus, you own everything we build."
         },
         {
-            question: "Do you work with businesses in my industry?",
-            answer: "We specialize in working with Private Equity firms, high-ticket coaches/consultants, and digital agencies. Our Growth Catalyst System is designed to be industry-agnostic while addressing the unique challenges of scaling businesses. If you're outside these core areas, we'll assess fit during our strategy call."
+            question: "Is this really worth £25,000?",
+            answer: "Consider this: if our system generates just 5 additional high-value clients per year (typical results show 10-20+), the investment pays for itself many times over. Our average client sees £200K-500K in additional revenue within the first year. The real question is: what's the cost of NOT having a predictable growth system?"
         },
         {
-            question: "What if I already have a website and existing systems?",
-            answer: "We can work with your existing infrastructure. Our approach includes a comprehensive audit of your current systems, identifying what can be optimized versus what needs rebuilding. We'll create a migration plan that minimizes disruption while maximizing improvements."
+            question: "What if I'm not tech-savvy? Can I manage these systems?",
+            answer: "Absolutely. We build everything to be simple and user-friendly. You'll get comprehensive training, detailed documentation, and 90 days of optimization support. Most clients find our systems easier to manage than their previous manual processes. Plus, we handle all the technical complexity behind the scenes."
         },
         {
-            question: "Do you provide ongoing support after implementation?",
-            answer: "Yes! All packages include ongoing optimization support (3-12+ months depending on your package). We also offer maintenance retainers for continuous monitoring, updates, and improvements. You'll have dedicated support channels and regular performance reviews."
+            question: "How do I know this will work for MY specific business?",
+            answer: "That's exactly what we determine in your free strategy session. We'll audit your current situation, identify your biggest growth bottlenecks, and create a custom roadmap. We only take on clients where we're confident we can deliver exceptional results. If we're not the right fit, we'll tell you upfront."
         },
         {
-            question: "How do you ensure the systems you build are secure and reliable?",
-            answer: "Security and reliability are foundational to everything we build. We implement enterprise-grade security measures, regular backups, monitoring systems, and follow industry best practices. All systems include 99.9% uptime guarantees and 24/7 monitoring."
+            question: "What if I need changes or have issues after launch?",
+            answer: "You get 90 days of included optimization and support, plus we offer ongoing maintenance retainers. We're invested in your long-term success, not just a one-time project. Our support team is responsive, and we continuously refine your systems based on performance data and your evolving needs."
+        },
+        {
+            question: "Why shouldn't I just hire someone internally or use cheaper alternatives?",
+            answer: "Building this expertise internally takes years and costs far more when you factor in salaries, tools, training, and mistakes. Cheaper alternatives often create more problems than they solve. You get immediate access to our team's years of experience and proven systems that have generated millions in client revenue."
+        },
+        {
+            question: "How do I get started?",
+            answer: "Book your free strategy session below. We'll analyze your business, identify your biggest opportunities, and show you exactly how the Growth Catalyst System would transform your operations. There's no obligation, and you'll walk away with valuable insights regardless of whether we work together."
         }
     ];
 

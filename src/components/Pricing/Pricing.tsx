@@ -14,59 +14,34 @@ interface ServiceTier {
 const Pricing: React.FC = () => {
     const serviceTiers: ServiceTier[] = [
         {
-            name: "Foundation Package",
-            description: "Perfect for businesses ready to establish their digital presence",
-            price: "£15,000",
-            duration: "Starting from",
-            features: [
-                "Strategic Blueprint & Architecture",
-                "High-Performance Website Development",
-                "Brand Identity & Messaging",
-                "Basic Automation Setup",
-                "3 Months Optimization Support",
-                "Performance Analytics Dashboard"
-            ],
-            ctaText: "Get Started"
-        },
-        {
             name: "Growth Catalyst System",
-            description: "Complete digital transformation for scaling businesses",
-            price: "£35,000",
-            duration: "Starting from",
+            description: "The complete system that transforms your business into a predictable revenue machine",
+            price: "£25,000",
+            duration: "Investment from",
             features: [
-                "Everything in Foundation Package",
-                "Advanced AI Automation Flows",
-                "CRM Integration & Lead Nurturing",
-                "Custom Software Development",
-                "6 Months Continuous Optimization",
-                "Dedicated Growth Strategist",
-                "ROI Tracking & Reporting",
-                "Priority Support"
+                "Full business audit & growth strategy",
+                "High-converting website & funnel build",
+                "Automated lead generation system",
+                "90-day implementation & optimization"
             ],
             highlight: true,
-            ctaText: "Book Strategy Call"
-        },
-        {
-            name: "Enterprise Solution",
-            description: "Bespoke systems for large-scale operations",
-            price: "Custom",
-            duration: "Pricing",
-            features: [
-                "Everything in Growth Catalyst",
-                "Multi-platform Integration",
-                "Custom API Development",
-                "Advanced Security Implementation",
-                "12+ Months Partnership",
-                "Dedicated Development Team",
-                "24/7 Support & Monitoring",
-                "White-label Solutions Available"
-            ],
-            ctaText: "Contact Us"
+            ctaText: "Book Your Free Strategy Call"
         }
     ];
 
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="max-w-2xl mx-auto">
+            {/* Section Header */}
+            <div className="text-center mb-12">
+                <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                    One System. Predictable Growth.
+                </h2>
+                <p className="text-xl text-gray-600">
+                    Stop piecing together multiple tools. Get everything you need to scale in one proven system.
+                </p>
+            </div>
+            
+            <div className="grid grid-cols-1 gap-8">
             {serviceTiers.map((tier, index) => (
                 <div 
                     key={tier.name} 
@@ -114,8 +89,9 @@ const Pricing: React.FC = () => {
                     </button>
                 </div>
             ))}
+            </div>
         </div>
-    )
-}
+    );
+};
 
-export default Pricing
+export default Pricing;
