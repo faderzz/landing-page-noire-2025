@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
                         {/* New Badge */}
                         <div className="inline-flex items-center gap-2 bg-purple-600/20 border border-purple-500/30 rounded-full px-4 py-2">
                             <span className="bg-purple-600 text-white text-xs font-semibold px-2 py-1 rounded-full">New</span>
-                            <span className="text-gray-300 text-sm">Limited spots available for Q1 2025!</span>
+                            <span className="text-gray-300 text-sm">Only 3 spots available!</span>
                         </div>
 
                         {/* Main Heading */}
