@@ -4,6 +4,8 @@ import Pricing from "@/components/Pricing/Pricing";
 import FAQ from "@/components/FAQ";
 import Logos from "@/components/Logos";
 import Benefits from "@/components/Benefits/Benefits";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import InstructorSection from "@/components/InstructorSection";
 import Container from "@/components/Container";
 import Section from "@/components/Section";
 import Stats from "@/components/Stats";
@@ -14,9 +16,10 @@ const HomePage: React.FC = () => {
     <>
       <Hero />
       {/* <Logos /> */}
+      <Benefits />
+      <WhyChooseUs />
+      <InstructorSection />
       <Container>
-        <Benefits />
-
         <Section
           id="pricing"
           title="Pricing"

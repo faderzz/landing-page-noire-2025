@@ -68,7 +68,7 @@ const Header: React.FC = () => {
 
                     {/* Enroll Now Button */}
                     <div className="hidden md:block">
-                        <Link href="#enroll" className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg transition-colors text-md font-medium flex items-center gap-2">
+                        <Link href="#enroll" className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg transition-colors text-md font-medium flex items-center gap-2">
                             Enroll Now
                             <HiArrowRight className="w-4 h-4" />
                         </Link>
