@@ -23,53 +23,51 @@ const Header: React.FC = () => {
             <Container className="!px-0">
                 <nav className="bg-white mx-auto flex justify-between items-center py-2 px-6 max-w-7xl mt-4 rounded-2xl shadow-lg border border-gray-100">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center gap-3">
+                    <div className="flex items-center gap-3">
                         <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
-                            <span className="text-white font-bold text-sm">E</span>
+                            <span className="text-white font-bold text-lg">G</span>
                         </div>
-                        <span className="text-xl font-semibold text-gray-900">
-                            Educore
-                        </span>
-                    </Link>
+                        <span className="text-xl font-bold text-gray-900">Growth Catalyst</span>
+                    </div>
 
-                    {/* Desktop Menu */}
-                    <ul className="hidden md:flex items-center space-x-8">
+                    {/* Navigation Menu */}
+                    <ul className="hidden md:flex items-center gap-8">
                         <li>
-                            <Link href="#overview" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
-                                Overview
+                            <Link href="#system" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
+                                The System
                             </Link>
                         </li>
                         <li>
-                            <Link href="#curriculum" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
-                                Curriculum
+                            <Link href="#services" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
+                                Services
                             </Link>
                         </li>
                         <li>
-                            <Link href="#instructor" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
-                                Instructor
+                            <Link href="#results" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
+                                Results
                             </Link>
                         </li>
                         <li>
                             <Link href="#testimonials" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
-                                Testimonials
+                                Case Studies
                             </Link>
                         </li>
                         <li>
                             <Link href="#pricing" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
-                                Pricing
+                                Investment
                             </Link>
                         </li>
                         <li>
-                            <Link href="#faq" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
-                                FAQ
+                            <Link href="#about" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
+                                About
                             </Link>
                         </li>
                     </ul>
 
                     {/* Enroll Now Button */}
                     <div className="hidden md:block">
-                        <Link href="#enroll" className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg transition-colors text-md font-medium flex items-center gap-2">
-                            Enroll Now
+                        <Link href="#contact" className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg transition-colors text-md font-medium flex items-center gap-2">
+                            Get Started
                             <HiArrowRight className="w-4 h-4" />
                         </Link>
                     </div>

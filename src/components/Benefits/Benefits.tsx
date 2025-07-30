@@ -12,16 +12,16 @@ const Benefits: React.FC = () => {
                         {/* Left Content */}
                         <div className="space-y-8">
                             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                                The only design course you need to be among top 1% designers
+                                The Growth Catalyst System: Your Complete Digital Transformation Solution
                             </h2>
                             
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center gap-2 transition-colors">
-                                    Enroll Now
+                                    Book Strategy Call
                                     <HiArrowRight className="w-4 h-4" />
                                 </button>
                                 <button className="border border-gray-300 text-gray-700 hover:bg-gray-50 px-6 py-3 rounded-lg font-medium transition-colors">
-                                    See Curriculum
+                                    View System Modules
                                 </button>
                             </div>
                             
@@ -31,7 +31,7 @@ const Benefits: React.FC = () => {
                                         <HiCheck className="w-4 h-4 text-white" />
                                     </div>
                                     <p className="text-gray-700">
-                                        Learn design principles from research to creating functional interfaces.
+                                        Strategic Blueprint & Execution Architecture - comprehensive roadmap for your digital transformation.
                                     </p>
                                 </div>
                                 
@@ -40,7 +40,7 @@ const Benefits: React.FC = () => {
                                         <HiCheck className="w-4 h-4 text-white" />
                                     </div>
                                     <p className="text-gray-700">
-                                        Build real-world projects using tools like Figma and Adobe XD.
+                                        High-Performance Web & Brand System - custom websites engineered for maximum conversion.
                                     </p>
                                 </div>
                                 
@@ -49,7 +49,7 @@ const Benefits: React.FC = () => {
                                         <HiCheck className="w-4 h-4 text-white" />
                                     </div>
                                     <p className="text-gray-700">
-                                        Develop skills for UI/UX roles, including prototyping and testing.
+                                        Intelligent Automation & AI Execution Flows - streamlined operations that run on autopilot.
                                     </p>
                                 </div>
                                 
@@ -58,7 +58,7 @@ const Benefits: React.FC = () => {
                                         <HiCheck className="w-4 h-4 text-white" />
                                     </div>
                                     <p className="text-gray-700">
-                                        Get expert feedback to refine your work.
+                                        Continuous System Optimization & Growth - ongoing monitoring and performance improvements.
                                     </p>
                                 </div>
                             </div>

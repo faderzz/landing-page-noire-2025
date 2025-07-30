@@ -1,73 +1,82 @@
 import React from 'react';
 import Image from 'next/image';
-import { HiStar, HiUsers, HiPlay } from 'react-icons/hi2';
+import { HiArrowTrendingUp, HiCurrencyDollar, HiClock } from 'react-icons/hi2';
 
-const InstructorSection: React.FC = () => {
+const CaseStudySection: React.FC = () => {
     return (
         <section className="px-1 py-8">
             <div className="max-w-full">
                 {/* Black rounded container with thin margin */}
                 <div className="bg-black rounded-3xl px-6 md:px-36 py-12 md:py-20 mx-3">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
-                        {/* Left - Image */}
+                        {/* Left - Case Study Visual */}
                         <div className="flex justify-center lg:justify-start">
                             <div className="relative">
                                 <Image
-                                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
-                                    alt="James Martinez - UI/UX Design Instructor"
+                                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=400&fit=crop"
+                                    alt="Digital Growth Case Study - Revenue Dashboard"
                                     width={400}
                                     height={400}
                                     className="rounded-2xl object-cover w-[400px] h-[400px]"
                                 />
+                                {/* Overlay badge */}
+                                <div className="absolute top-4 left-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                    Live Results
+                                </div>
                             </div>
                         </div>
 
-                        {/* Right - Content */}
+                        {/* Right - Case Study Content */}
                         <div className="text-white">
+                            <div className="mb-4">
+                                <span className="inline-flex items-center bg-purple-600/20 border border-purple-500/30 rounded-full px-3 py-1 text-sm text-purple-300">
+                                    Case Study
+                                </span>
+                            </div>
+                            
                             <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-                                Meet James Martinez
+                                From $50K to $500K ARR
                             </h2>
                             
                             <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                                James Martinez is a seasoned UI/UX designer and educator with over a 
-                                decade of experience creating intuitive, user-centered designs for top global 
-                                brands.
+                                A high-ticket coaching business struggling with manual lead qualification and 
+                                inconsistent sales processes. We implemented The Growth Catalyst System to 
+                                automate their entire customer journey.
                             </p>
                             
                             <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                                Passionate about teaching, James has guided thousands of students toward 
-                                mastering the craft of UI/UX design, combining practical techniques with 
-                                industry insights.
+                                The result? 10x revenue growth in 18 months through strategic automation, 
+                                high-converting landing pages, and intelligent lead nurturing systems that 
+                                operate 24/7 without human intervention.
                             </p>
 
-                            {/* Stats */}
+                            {/* Results */}
                             <div className="space-y-4 mb-8">
                                 <div className="flex items-center gap-3">
-                                    <HiStar className="w-5 h-5 text-purple-400" />
-                                    <span className="text-white font-medium">4.5 Instructor Rating</span>
+                                    <HiArrowTrendingUp className="w-5 h-5 text-green-400" />
+                                    <span className="text-white font-medium">1,000% Revenue Increase</span>
                                 </div>
                                 
                                 <div className="flex items-center gap-3">
-                                    <HiUsers className="w-5 h-5 text-blue-400" />
-                                    <span className="text-white font-medium">316,195 Students</span>
+                                    <HiCurrencyDollar className="w-5 h-5 text-blue-400" />
+                                    <span className="text-white font-medium">$450K Additional ARR</span>
                                 </div>
                                 
                                 <div className="flex items-center gap-3">
-                                    <HiPlay className="w-5 h-5 text-purple-400" />
-                                    <span className="text-white font-medium">5 Courses</span>
+                                    <HiClock className="w-5 h-5 text-purple-400" />
+                                    <span className="text-white font-medium">60% Time Savings</span>
                                 </div>
                             </div>
 
-                            {/* Brands Educated */}
+                            {/* Implementation Timeframe */}
                             <div>
                                 <p className="text-gray-400 text-sm font-medium mb-4 tracking-wider uppercase">
-                                    Brands Educated
+                                    Implementation Timeline
                                 </p>
                                 <div className="flex items-center gap-8 opacity-60">
-                                    {/* Logo placeholders - you can replace with actual brand logos */}
-                                    <div className="text-white font-bold text-lg">logoipsum</div>
-                                    <div className="text-white font-bold text-lg">logoipsum</div>
-                                    <div className="text-white font-bold text-lg">logoip</div>
+                                    <div className="text-white font-bold text-lg">90 Days Setup</div>
+                                    <div className="text-white font-bold text-lg">6 Months ROI</div>
+                                    <div className="text-white font-bold text-lg">18 Months Scale</div>
                                 </div>
                             </div>
                         </div>
@@ -78,4 +87,4 @@ const InstructorSection: React.FC = () => {
     );
 };
 
-export default InstructorSection;
+export default CaseStudySection;
