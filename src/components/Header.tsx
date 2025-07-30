@@ -21,7 +21,7 @@ const Header: React.FC = () => {
     return (
         <header className="fixed top-0 left-0 right-0 z-50 mx-auto w-full">
             <Container className="!px-0">
-                <nav className="bg-white mx-auto flex justify-between items-center py-4 px-6 max-w-6xl mt-4 rounded-2xl shadow-lg border border-gray-100">
+                <nav className="bg-white mx-auto flex justify-between items-center py-2 px-6 max-w-7xl mt-4 rounded-2xl shadow-lg border border-gray-100">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-3">
                         <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
@@ -68,7 +68,7 @@ const Header: React.FC = () => {
 
                     {/* Enroll Now Button */}
                     <div className="hidden md:block">
-                        <Link href="#enroll" className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg transition-colors font-medium flex items-center gap-2">
+                        <Link href="#enroll" className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg transition-colors text-md font-medium flex items-center gap-2">
                             Enroll Now
                             <HiArrowRight className="w-4 h-4" />
                         </Link>
