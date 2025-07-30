@@ -4,7 +4,7 @@ import { HiArrowTrendingUp, HiCurrencyDollar, HiClock } from 'react-icons/hi2';
 
 const CaseStudySection: React.FC = () => {
     return (
-        <section className="px-1 py-8">
+        <section id="results" className="px-1 py-8">
             <div className="max-w-full">
                 {/* Black rounded container with thin margin */}
                 <div className="bg-black rounded-3xl px-6 md:px-36 py-12 md:py-20 mx-3">

@@ -1,29 +1,25 @@
 export const navigationLinks = {
-  // Main navigation
-  system: "#system",
-  services: "#services", 
-  results: "#results",
-  caseStudies: "#testimonials",
-  investment: "#pricing",
-  about: "#about",
-  contact: "#contact",
+  // Main navigation (matching actual page sections)
+  system: "#system",           // WhyChooseUs section
+  services: "#services",       // Benefits section  
+  results: "#results",         // CaseStudySection
+  caseStudies: "#testimonials", // Testimonials section
+  investment: "#pricing",      // Pricing section
+  about: "#stats",            // Stats section
+  
+  // Additional section links
+  hero: "#hero",
+  faq: "#faq",
+  cta: "#cta",
+  
+  // CTA links
+  bookCall: "https://calendly.com/noire-agency/strategy-call",
+  caseStudiesPage: "#testimonials",
   
   // Footer links
-  privacy: "/privacy",
-  terms: "/terms",
-  cookies: "/cookies",
-  
-  // Contact information
-  email: "hello@noire.agency",
-  phone: "+44 20 7946 0958",
-  
-  // Social media
-  linkedin: "https://linkedin.com/company/noire-agency",
-  twitter: "https://twitter.com/noire_agency",
-  
-  // Call to action
-  bookCall: "https://calendly.com/noire-agency/strategy-call",
-  caseStudiesPage: "/case-studies"
+  privacyPolicy: "/privacy",
+  termsOfService: "/terms",
+  contact: "mailto:hello@noire.agency"
 };
 
 export const companyInfo = {

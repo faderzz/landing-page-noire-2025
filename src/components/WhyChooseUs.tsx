@@ -3,7 +3,7 @@ import { HiCurrencyDollar, HiArrowTrendingUp, HiHome, HiChartBar, HiAcademicCap,
 
 const WhyChooseUs: React.FC = () => {
     return (
-        <section className="py-20 px-6 bg-white">
+        <section id="system" className="py-20 px-6 bg-white">
             <div className="max-w-6xl mx-auto">
                 {/* Badge and Title */}
                 <div className="text-center mb-16">

@@ -1,12 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
 import { HiArrowRight, HiCheck, HiComputerDesktop, HiAcademicCap, HiUserGroup } from 'react-icons/hi2';
+import { navigationLinks } from '@/data/navigation';
 
 const Benefits: React.FC = () => {
     return (
         <>
             {/* Benefits Section */}
-            <section className="bg-gray-50 py-20 mt-8 px-6 rounded-2xl">
+            <section id="services" className="bg-gray-50 py-20 mt-8 px-6 rounded-2xl">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         {/* Left Content */}
@@ -16,13 +17,13 @@ const Benefits: React.FC = () => {
                             </h2>
                             
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center gap-2 transition-colors">
+                                <a href={navigationLinks.bookCall} className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center gap-2 transition-colors">
                                     Book Strategy Call
                                     <HiArrowRight className="w-4 h-4" />
-                                </button>
-                                <button className="border border-gray-300 text-gray-700 hover:bg-gray-50 px-6 py-3 rounded-lg font-medium transition-colors">
+                                </a>
+                                <a href={navigationLinks.system} className="border border-gray-300 text-gray-700 hover:bg-gray-50 px-6 py-3 rounded-lg font-medium transition-colors">
                                     View System Modules
-                                </button>
+                                </a>
                             </div>
                             
                             <div className="space-y-4">

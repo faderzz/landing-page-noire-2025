@@ -1,5 +1,6 @@
 import React from 'react';
 import { HiArrowRight, HiPhone } from 'react-icons/hi2';
+import { navigationLinks } from '@/data/navigation';
 
 const CTA: React.FC = () => {
     return (
@@ -26,14 +27,14 @@ const CTA: React.FC = () => {
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-center gap-4">
-                            <button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-lg font-semibold flex items-center gap-2 transition-colors text-lg">
+                            <a href={navigationLinks.bookCall} className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-lg font-semibold flex items-center gap-2 transition-colors text-lg">
                                 <HiPhone className="w-5 h-5" />
                                 Book Strategy Call
                                 <HiArrowRight className="w-5 h-5" />
-                            </button>
-                            <button className="border border-white/30 text-white hover:bg-white/10 px-8 py-4 rounded-lg font-semibold transition-colors text-lg">
+                            </a>
+                            <a href={navigationLinks.caseStudiesPage} className="border border-white/30 text-white hover:bg-white/10 px-8 py-4 rounded-lg font-semibold transition-colors text-lg">
                                 View Case Studies
-                            </button>
+                            </a>
                         </div>
                         
                         <p className="text-gray-400 text-sm mt-6">
