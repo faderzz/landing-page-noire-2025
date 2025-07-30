@@ -52,16 +52,6 @@ const Testimonials: React.FC = () => {
 
     return (
         <div className="max-w-6xl mx-auto">
-            {/* Section Header */}
-            <div className="text-center mb-16">
-                <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                    What Our Clients Say
-                </h2>
-                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Don't just take our word for it. Here's what business leaders say about working with Noire.
-                </p>
-            </div>
-
             {/* Featured Video Testimonial */}
             <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-3xl p-8 lg:p-12 mb-16">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">

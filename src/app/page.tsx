@@ -37,6 +37,8 @@ const HomePage: React.FC = () => {
 
         <Section
           id="testimonials"
+          title="What Our Clients Say"
+          description="Don't just take our word for it. Here's what business leaders say about working with Noire."
         >
           <Testimonials />
         </Section>
