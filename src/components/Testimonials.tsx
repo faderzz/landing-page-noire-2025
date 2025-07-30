@@ -27,7 +27,7 @@ const Testimonials: React.FC = () => {
             company: "Scale Consulting Group",
             avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b0c0?w=100&h=100&fit=crop&crop=face",
             message: "Working with Growth Catalyst was a game-changer. Their automation systems freed up 15 hours per week that I now spend on high-value client work instead of admin tasks.",
-            result: "$200K ARR increase in 6 months"
+            result: "£200K ARR increase in 6 months"
         },
         {
             name: "David Kim",

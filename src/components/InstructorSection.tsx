@@ -35,7 +35,7 @@ const CaseStudySection: React.FC = () => {
                             </div>
                             
                             <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-                                From $50K to $500K ARR
+                                From £50K to £500K ARR
                             </h2>
                             
                             <p className="text-gray-300 text-lg leading-relaxed mb-6">
