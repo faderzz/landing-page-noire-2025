@@ -28,7 +28,10 @@ const VSL: React.FC = () => {
                 <div className="relative bg-gray-900 rounded-2xl overflow-hidden mb-8 aspect-video">
                     {/* Video Placeholder - Replace with actual video embed */}
                     <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-purple-600 to-purple-800">
-                        <button className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors backdrop-blur-sm">
+                        <button 
+                            className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors backdrop-blur-sm"
+                            aria-label="Play video"
+                        >
                             <HiPlay className="w-8 h-8 text-white ml-1" />
                         </button>
                     </div>

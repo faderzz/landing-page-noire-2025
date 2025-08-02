@@ -86,7 +86,7 @@ const Hero: React.FC = () => {
                     <div className="relative mt-8">
                         <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
                             <div className="text-center mb-5">
-                                <h3 className="text-xl font-bold text-white mb-1">Book a Strategy Call</h3>
+                                <h2 className="text-xl font-bold text-white mb-1">Book a Strategy Call</h2>
                                 <p className="text-gray-400 text-sm">Let's discuss how The Growth Catalyst System can accelerate your business growth</p>
                             </div>
                             

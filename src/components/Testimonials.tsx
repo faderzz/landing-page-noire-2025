@@ -67,7 +67,10 @@ const Testimonials: React.FC = () => {
                             />
                             {/* Play Button Overlay */}
                             <div className="absolute inset-0 flex items-center justify-center bg-black/20">
-                                <button className="bg-white/90 hover:bg-white rounded-full p-6 shadow-lg transition-colors">
+                                <button 
+                                    className="bg-white/90 hover:bg-white rounded-full p-6 shadow-lg transition-colors"
+                                    aria-label="Play testimonial video"
+                                >
                                     <svg className="w-8 h-8 text-purple-600 ml-1" fill="currentColor" viewBox="0 0 24 24">
                                         <path d="M8 5v14l11-7z"/>
                                     </svg>
