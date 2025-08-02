@@ -1,19 +1,19 @@
 export const navigationLinks = {
-  // Main navigation (ordered correctly: Home | System | Results | Case Studies | Pricing | FAQs | Contact)
+  // Main navigation (ordered to match actual page layout: VSL | Benefits | Results | Process | System | Pricing | FAQs)
   home: "/",
-  system: "#system",           // WhyChooseUs section
+  vsl: "#vsl",                // VSL section
+  benefits: "#services",       // Benefits section
   results: "#results",         // CaseStudySection
-  caseStudies: "#testimonials", // Testimonials section
+  process: "#process",         // HowItWorks section
+  system: "#system",           // WhyChooseUs section
   pricing: "#pricing",         // Pricing section
   faq: "#faq",                // FAQ section
   contact: "#contact",         // Footer/Contact section
   
   // Additional section links
   hero: "#hero",
-  benefits: "#benefits",       // Benefits section
-  vsl: "#vsl",                // VSL section
-  process: "#process",         // How it works section
   trust: "#trust",            // Trust signals section
+  testimonials: "#testimonials", // Testimonials section
   leadMagnet: "#lead-magnet",  // Lead magnet section
   cta: "#cta",
   

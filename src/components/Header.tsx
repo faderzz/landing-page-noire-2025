@@ -29,8 +29,8 @@ const Header: React.FC = () => {
                     {/* Navigation Menu */}
                     <ul className="hidden md:flex items-center gap-8">
                         <li>
-                            <Link href={navigationLinks.system} className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
-                                System
+                            <Link href={navigationLinks.benefits} className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
+                                Services
                             </Link>
                         </li>
                         <li>
@@ -39,8 +39,13 @@ const Header: React.FC = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href={navigationLinks.caseStudies} className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
-                                Case Studies
+                            <Link href={navigationLinks.process} className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
+                                Process
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href={navigationLinks.system} className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
+                                System
                             </Link>
                         </li>
                         <li>
@@ -51,11 +56,6 @@ const Header: React.FC = () => {
                         <li>
                             <Link href={navigationLinks.faq} className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
                                 FAQs
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href={navigationLinks.contact} className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
-                                Contact
                             </Link>
                         </li>
                     </ul>
@@ -101,8 +101,8 @@ const Header: React.FC = () => {
                 <div id="mobile-menu" className="md:hidden bg-white shadow-lg border-t border-gray-100">
                     <ul className="flex flex-col space-y-4 pt-4 pb-6 px-6">
                         <li>
-                            <Link href={navigationLinks.system} className="text-gray-700 hover:text-gray-900 transition-colors font-medium block py-2" onClick={toggleMenu}>
-                                System
+                            <Link href={navigationLinks.benefits} className="text-gray-700 hover:text-gray-900 transition-colors font-medium block py-2" onClick={toggleMenu}>
+                                Services
                             </Link>
                         </li>
                         <li>
@@ -111,8 +111,13 @@ const Header: React.FC = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href={navigationLinks.caseStudies} className="text-gray-700 hover:text-gray-900 transition-colors font-medium block py-2" onClick={toggleMenu}>
-                                Case Studies
+                            <Link href={navigationLinks.process} className="text-gray-700 hover:text-gray-900 transition-colors font-medium block py-2" onClick={toggleMenu}>
+                                Process
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href={navigationLinks.system} className="text-gray-700 hover:text-gray-900 transition-colors font-medium block py-2" onClick={toggleMenu}>
+                                System
                             </Link>
                         </li>
                         <li>
@@ -123,11 +128,6 @@ const Header: React.FC = () => {
                         <li>
                             <Link href={navigationLinks.faq} className="text-gray-700 hover:text-gray-900 transition-colors font-medium block py-2" onClick={toggleMenu}>
                                 FAQs
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href={navigationLinks.contact} className="text-gray-700 hover:text-gray-900 transition-colors font-medium block py-2" onClick={toggleMenu}>
-                                Contact
                             </Link>
                         </li>
                         <li className="pt-4">

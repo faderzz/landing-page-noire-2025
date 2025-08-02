@@ -18,7 +18,7 @@ const Testimonials: React.FC = () => {
         company: "Velocity Partners PE",
         avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
         videoThumbnail: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        message: "The Growth Catalyst System completely transformed how we operate. In 6 months, we went from £120K to £500K ARR. The automation handles everything – from deal sourcing to investor communications. It's like having a 24/7 team working for us.",
+        message: "The Growth Catalyst System completely transformed how we operate. In 6 months, we went from £120K to £500K ARR. The automation handles everything - from deal sourcing to investor communications. It's like having a 24/7 team working for us.",
         result: "317% Revenue Growth in 6 Months",
         metrics: ["£380K ARR Increase", "40% Time Savings", "10x Deal Flow"]
     };

@@ -17,11 +17,11 @@ const VSL: React.FC = () => {
     };
 
     return (
-        <section className="py-20 px-6 bg-white">
+        <section id="vsl" className="py-20 px-6 bg-white">
             <div className="max-w-4xl mx-auto text-center">
                 {/* Headline */}
                 <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-8">
-                    How We Help Businesses Grow – in Just 3 Minutes
+                    How We Help Businesses Grow - in Just 3 Minutes
                 </h2>
 
                 {/* Video Container */}
@@ -76,7 +76,7 @@ const VSL: React.FC = () => {
                             className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 font-medium transition-colors"
                         >
                             <HiEnvelope className="w-5 h-5" />
-                            Watch Later – Send me the video
+                            Watch Later - Send me the video
                         </button>
                     ) : (
                         <form onSubmit={handleWatchLater} className="max-w-md mx-auto">
