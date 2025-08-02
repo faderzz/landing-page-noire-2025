@@ -28,19 +28,22 @@ const Footer: React.FC = () => {
                     <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
                     <ul className="text-foreground-accent">
                         <li className="mb-2">
-                            <Link href={navigationLinks.system} className="hover:text-foreground">The System</Link>
+                            <Link href={navigationLinks.system} className="hover:text-foreground">System</Link>
                         </li>
                         <li className="mb-2">
-                            <Link href={navigationLinks.services} className="hover:text-foreground">Services</Link>
+                            <Link href={navigationLinks.results} className="hover:text-foreground">Results</Link>
                         </li>
                         <li className="mb-2">
                             <Link href={navigationLinks.caseStudies} className="hover:text-foreground">Case Studies</Link>
                         </li>
                         <li className="mb-2">
-                            <Link href={navigationLinks.investment} className="hover:text-foreground">Investment</Link>
+                            <Link href={navigationLinks.pricing} className="hover:text-foreground">Pricing</Link>
                         </li>
                         <li className="mb-2">
-                            <Link href={navigationLinks.about} className="hover:text-foreground">About</Link>
+                            <Link href={navigationLinks.faq} className="hover:text-foreground">FAQs</Link>
+                        </li>
+                        <li className="mb-2">
+                            <Link href={navigationLinks.contact} className="hover:text-foreground">Contact</Link>
                         </li>
                     </ul>
                 </div>

@@ -30,12 +30,7 @@ const Header: React.FC = () => {
                     <ul className="hidden md:flex items-center gap-8">
                         <li>
                             <Link href={navigationLinks.system} className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
-                                The System
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href={navigationLinks.services} className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
-                                Services
+                                System
                             </Link>
                         </li>
                         <li>
@@ -49,13 +44,18 @@ const Header: React.FC = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href={navigationLinks.investment} className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
-                                Investment
+                            <Link href={navigationLinks.pricing} className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
+                                Pricing
                             </Link>
                         </li>
                         <li>
-                            <Link href={navigationLinks.about} className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
-                                About
+                            <Link href={navigationLinks.faq} className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
+                                FAQs
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href={navigationLinks.contact} className="text-gray-700 hover:text-gray-900 transition-colors font-medium">
+                                Contact
                             </Link>
                         </li>
                     </ul>
@@ -101,38 +101,38 @@ const Header: React.FC = () => {
                 <div id="mobile-menu" className="md:hidden bg-white shadow-lg border-t border-gray-100">
                     <ul className="flex flex-col space-y-4 pt-4 pb-6 px-6">
                         <li>
-                            <Link href="#overview" className="text-gray-700 hover:text-gray-900 transition-colors font-medium block py-2">
-                                Overview
+                            <Link href={navigationLinks.system} className="text-gray-700 hover:text-gray-900 transition-colors font-medium block py-2" onClick={toggleMenu}>
+                                System
                             </Link>
                         </li>
                         <li>
-                            <Link href="#curriculum" className="text-gray-700 hover:text-gray-900 transition-colors font-medium block py-2">
-                                Curriculum
+                            <Link href={navigationLinks.results} className="text-gray-700 hover:text-gray-900 transition-colors font-medium block py-2" onClick={toggleMenu}>
+                                Results
                             </Link>
                         </li>
                         <li>
-                            <Link href="#instructor" className="text-gray-700 hover:text-gray-900 transition-colors font-medium block py-2">
-                                Instructor
+                            <Link href={navigationLinks.caseStudies} className="text-gray-700 hover:text-gray-900 transition-colors font-medium block py-2" onClick={toggleMenu}>
+                                Case Studies
                             </Link>
                         </li>
                         <li>
-                            <Link href="#testimonials" className="text-gray-700 hover:text-gray-900 transition-colors font-medium block py-2">
-                                Testimonials
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="#pricing" className="text-gray-700 hover:text-gray-900 transition-colors font-medium block py-2">
+                            <Link href={navigationLinks.pricing} className="text-gray-700 hover:text-gray-900 transition-colors font-medium block py-2" onClick={toggleMenu}>
                                 Pricing
                             </Link>
                         </li>
                         <li>
-                            <Link href="#faq" className="text-gray-700 hover:text-gray-900 transition-colors font-medium block py-2">
-                                FAQ
+                            <Link href={navigationLinks.faq} className="text-gray-700 hover:text-gray-900 transition-colors font-medium block py-2" onClick={toggleMenu}>
+                                FAQs
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href={navigationLinks.contact} className="text-gray-700 hover:text-gray-900 transition-colors font-medium block py-2" onClick={toggleMenu}>
+                                Contact
                             </Link>
                         </li>
                         <li className="pt-4">
-                            <Link href="#enroll" className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg transition-colors font-medium flex items-center justify-center gap-2">
-                                Enroll Now
+                            <Link href={navigationLinks.bookCall} className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg transition-colors font-medium flex items-center justify-center gap-2" onClick={toggleMenu}>
+                                Get Started
                                 <HiArrowRight className="w-4 h-4" />
                             </Link>
                         </li>

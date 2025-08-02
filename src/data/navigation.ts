@@ -1,15 +1,20 @@
 export const navigationLinks = {
-  // Main navigation (matching actual page sections)
+  // Main navigation (ordered correctly: Home | System | Results | Case Studies | Pricing | FAQs | Contact)
+  home: "/",
   system: "#system",           // WhyChooseUs section
-  services: "#services",       // Benefits section  
   results: "#results",         // CaseStudySection
   caseStudies: "#testimonials", // Testimonials section
-  investment: "#pricing",      // Pricing section
-  about: "#stats",            // Stats section
+  pricing: "#pricing",         // Pricing section
+  faq: "#faq",                // FAQ section
+  contact: "#contact",         // Footer/Contact section
   
   // Additional section links
   hero: "#hero",
-  faq: "#faq",
+  benefits: "#benefits",       // Benefits section
+  vsl: "#vsl",                // VSL section
+  process: "#process",         // How it works section
+  trust: "#trust",            // Trust signals section
+  leadMagnet: "#lead-magnet",  // Lead magnet section
   cta: "#cta",
   
   // CTA links
@@ -19,8 +24,8 @@ export const navigationLinks = {
   // Footer links
   privacyPolicy: "/privacy",
   termsOfService: "/terms",
-  contact: "mailto:hello@noire.agency",
-  phone: "+44 20 7946 0958"
+  contactEmail: "mailto:hello@noire.agency",
+  phone: "tel:+442079460958"
 };
 
 export const companyInfo = {

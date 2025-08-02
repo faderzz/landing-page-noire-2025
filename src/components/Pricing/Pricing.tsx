@@ -76,16 +76,6 @@ const Pricing: React.FC = () => {
 
     return (
         <div className="max-w-7xl mx-auto">
-            {/* Section Header */}
-            <div className="text-center mb-16">
-                <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                    Our Growth Catalyst System: Investment Tiers
-                </h2>
-                <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-                    We don't just build; we engineer transformation. Our modular system delivers unparalleled growth and efficiency, scaling with your ambition.
-                </p>
-            </div>
-            
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {serviceTiers.map((tier, index) => (
                 <div 

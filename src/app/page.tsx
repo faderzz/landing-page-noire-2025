@@ -30,7 +30,7 @@ const HomePage: React.FC = () => {
         <Section
           id="pricing"
           title="Pricing"
-          description="Simple, transparent pricing. No surprises."
+          description="We don't just build; we engineer transformation. Our modular system delivers unparalleled growth and efficiency, scaling with your ambition."
         >
           <Pricing />
         </Section>
